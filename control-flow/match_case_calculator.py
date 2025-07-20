@@ -1,14 +1,26 @@
-num1 = int(input("Enter the first number:"))
-num2 = int(input("Enter the second number:"))
-operations = input("Choose the operation (+, -, *, /):")
-match operations:
+# basic_operations.py
+
+# Get user input
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+operation = input("Choose the operation (+, -, *, /): ")
+
+# Perform calculation using match-case
+match operation:
     case "+":
-        print ("The result is",num1 + num2)
+        result = num1 + num2
+        print("The result is", result)
     case "-":
-        print("The result is",num1 - num2)
+        result = num1 - num2
+        print("The result is", result)
     case "*":
-        print("The result is",num1 * num2)
+        result = num1 * num2
+        print("The result is", result)
     case "/":
-        print("The result is",num1 / num2)
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            result = num1 / num2
+            print("The result is", result)
     case _:
-        print("Operation Error")
+        print("Error: Invalid operation selected.")

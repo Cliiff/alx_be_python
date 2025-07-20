@@ -28,5 +28,5 @@ if time_bound == "yes":
     reminder += " This task requires immediate attention today!"
 
 # Display the reminder
-print("\n" + reminder)
+print(f"Reminder: Your task is '{task}'. {reminder}")
 # End of daily reminder script

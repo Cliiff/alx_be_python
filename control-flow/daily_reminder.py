@@ -1,7 +1,7 @@
 # daily_reminder.py
 
 # Prompt the user for the task
-task = input("Task: ")
+task = input("Enter your task: ")
 
 # Prompt for the priority using the exact required wording
 priority = input("Priority (high/medium/low): ").lower()
